@@ -1,0 +1,177 @@
+* {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  width: 0.1px;
+}
+
+body::-webkit-scrollbar-track {
+  background: orange;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 0px solid orange;
+}
+
+.btn-primary {
+  background-color: #51348b;
+  border: 2px solid #51348b;
+  font-size: large;
+  height: fit-content;
+  padding: 15px;
+}
+
+.careers {
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ef4138;
+  font-size: large;
+  padding: 15px;
+  text-decoration: none;
+  height: fit-content;
+  border: 2px solid #ef4138;
+}
+
+/* Navbar  */
+
+.navbar {
+  padding: 15px;
+  /* background-color: white; */
+}
+/* 
+nav * {
+  color: white !important;
+} */
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+.fit-width-lg {
+  width: fit-content;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.navbar-collapse {
+  flex-basis: 0%;
+  display: flex;
+}
+
+.navbar-toggler{
+  border: none;
+  background-color: transparent!important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-brands:before {
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 800px) {
+  .fit-width-lg {
+    width: 100%;
+  }
+  .navbar-collapse {
+    padding: 15px;
+    flex-basis: 100% !important;
+  }
+  .navbar-collapse a {
+    text-align: center;
+  }
+}
+
+/* header */
+
+nav,
+header {
+  background-color: white;
+  color: #535352 !important;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+.title:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 30%;
+  background-color: #535352;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 19px;
+  }
+  .lead {
+    font-size: 15px;
+  }
+}
+
+/* features */
+
+#features {
+  background-color: #535352;
+  background-image: url("/assets/images/535352.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#features h2 {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 600;
+  /* color: white; */
+}
+
+#features .lead {
+  /* color: white; */
+  font-size: medium;
+  text-align: center;
+}
+
+#features .feature {
+  text-align: center;
+  padding: 15px 15px 45px 15px;
+}
+
+#features .fa:before,
+#features .far:before {
+  font-size: 3rem;
+  /* color: #ef4138; */
+}
+
+#features p {
+  text-align: center;
+  font-size: medium;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+#features p strong {
+  font-weight: 600 !important;
+}
