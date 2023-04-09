@@ -69,9 +69,9 @@ nav * {
   display: flex;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 .navbar-toggler:focus {
@@ -131,7 +131,7 @@ header {
 
 /* features */
 
-#features {
+#features, #about {
   background-color: #535352;
   background-image: url("../assets/images/535352.jpg");
   height: 100%;
@@ -141,7 +141,8 @@ header {
   background-size: cover;
 }
 
-#features h2 {
+#features h2,
+.profile h2 {
   text-align: center;
   font-size: x-large;
   font-weight: 600;
@@ -174,4 +175,98 @@ header {
 
 #features p strong {
   font-weight: 600 !important;
+}
+
+/* Profile */
+
+.profile .container .row {
+  background-color: rgb(245, 245, 245);
+}
+
+.profile .img-fluid {
+  height: 100%;
+  width: 100%;
+}
+
+.profile h3 {
+  font-weight: 400;
+  font-size: xx-large;
+  line-height: 2.67rem;
+}
+
+.profile p {
+  font-weight: 200;
+  font-size: large;
+  line-height: 2rem;
+}
+
+.profile a {
+  color: black;
+  font-size: large;
+  font-style: italic;
+}
+
+/* About Us */
+
+#about h2 {
+  font-size: x-large;
+  font-weight: 400;
+  text-align: center;
+}
+
+#about p{
+  font-weight: 100;
+  font-size: large;
+}
+
+#about .detail{
+  background-color: white;
+  border-radius: 5px;
+}
+
+.border-right {
+  border-right: 1px solid lightgray;
+}
+
+#about h3{
+  margin: auto;
+  font-size: large;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 500px) {
+  .border-right{
+    border-right: none;
+  }
+
+  #about h3{
+    margin-top: 0.5rem;
+  }
+}
+
+/* Footer */
+
+footer *{
+  color: #535352;
+}
+
+footer .social-media{
+  text-align: center;
+}
+
+footer .social-media *:before{
+  font-size: xx-large;
+}
+
+footer h5{
+  font-size: large;
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+}
+
+.copyright{
+  font-size: small;
 }
