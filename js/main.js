@@ -7,8 +7,6 @@ var prevScrollpos = window.pageYOffset;
 
 function hidefunction() {
   var currentScrollPos = window.pageYOffset;
-  console.log('current, previous', currentScrollPos, prevScrollpos)
-  console.log(prevScrollpos>currentScrollPos)
   if (prevScrollpos > currentScrollPos) {
     nav.style.top = "0";
     nav.style.transition = "0.5s";
