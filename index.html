@@ -24,7 +24,7 @@
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="nav">
       <div class="container px-5">
         <a class="navbar-brand" href="#!">WMA</a>
         <button
@@ -47,8 +47,8 @@
               <a class="nav-link active" aria-current="page" href="#!">Home</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="products">Products</a></li>
             <li class="nav-item"><a class="nav-link" href="#!">Careers</a></li>
           </ul>
         </div>
@@ -72,34 +72,46 @@
       </div>
     </nav>
     <!-- Header-->
-    <header class="py-5">
-      <div class="container px-5">
+    <header class="py-5 d-flex home">
+      <div class="container px-5 m-auto">
         <div class="row gx-5 justify-content-center">
           <div class="col-lg-6">
             <div class="text-center my-5">
               <h1 class="title fw-bolder mb-2">World Metals and Alloys</h1>
               <p class="lead mb-5">The foundation to your everyday life</p>
-              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                <a
-                  target="_blank"
-                  class="btn btn-primary"
-                  href="https://wa.me/919480809952?text=I%27m%20interested%20in%20your%20products"
-                  >Get In touch with us</a
-                >
-                <a
-                  target="_blank"
-                  class="careers btn-lg px-4"
-                  href="https://www.linkedin.com"
-                  >Careers</a
-                >
-              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- Features section-->
-    <section class="py-5 border-bottom" id="features">
+    <section class="py-5 profile">
+      <div class="container">
+        <!-- <h2 class="mb-4">What do we do?</h2> -->
+        <div class="row">
+          <div class="col-lg-6 p-lg-0">
+            <img class="img-fluid" src="assets/images/535352.jpg" />
+          </div>
+          <div class="col-lg-6 p-lg-5 p-3">
+            <h3 class="px-5 mb-3">Here is a little something about us</h3>
+            <p class="px-5">
+              World Metals & Alloys (FZC) based in Sharjah, UAE deals in various
+              Ferro Alloys, Virgin Metals, Stainless Steel Scraps, Nickel
+              Scraps, Ferrous and Non-Ferrous Metal Scraps, Minerals,
+              Refractories etc. Our professionalism, experience and undivided
+              dedication to our customers makes us amongst the best preferred
+              suppliers in the industry. Quality is never compromised and utmost
+              attention is paid to ensure that all your requirements are
+              fulfilled on time.
+            </p>
+            <a class="text-decoration-none px-5" href="about">
+              Learn More
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" id="features">
       <div class="container px-md-5 px-4 py-3">
         <div class="card p-md-5 p-4 pt-5 pb-5">
           <h2 class="mb-3">Not just Metals and Alloys</h2>
@@ -158,39 +170,26 @@
         </div>
       </div>
     </section>
-    <section class="py-5 profile">
-      <div class="container">
-        <h2 class="mb-4">What do we do?</h2>
-        <div class="row">
-          <div class="col-lg-6 p-lg-0">
-            <img class="img-fluid" src="assets/images/535352.jpg" />
-          </div>
-          <div class="col-lg-6 p-lg-5 p-3">
-            <h3 class="px-5 mb-3">Here is a little more about us</h3>
-            <p class="px-5">
-              World Metals & Alloys (FZC) based in Sharjah, UAE deals in various
-              Ferro Alloys, Virgin Metals, Stainless Steel Scraps, Nickel
-              Scraps, Ferrous and Non-Ferrous Metal Scraps, Minerals,
-              Refractories etc. Our professionalism, experience and undivided
-              dedication to our customers makes us amongst the best preferred
-              suppliers in the industry. Quality is never compromised and utmost
-              attention is paid to ensure that all your requirements are
-              fulfilled on time.
-            </p>
-            <a class="text-decoration-none px-5" href="about">
-              Learn More
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="py-5">
       <div class="container px-5">
         <h5 class="mb-1">World Metals and Alloys (FZC)</h5>
         <p class="mb-0">Ware House No Q4/300,</p>
         <p class="mb-0">S.A.I.F Zone 120369</p>
         <p>Sharjah U.A.E</p>
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center p-4 pt-2">
+          <a
+            target="_blank"
+            class="btn btn-primary"
+            href="contact/"
+            >Get In touch with us</a
+          >
+          <a
+            target="_blank"
+            class="careers btn-lg px-4"
+            href="https://www.linkedin.com"
+            >Careers</a
+          >
+        </div>
         <div class="social-media mb-2">
           <a
             target="_blank"
@@ -202,7 +201,7 @@
 
           <a
             target="_blank"
-            href="https://wa.me/919480809952?text=I%27m%20interested%20in%20your%20products"
+            href="contact"
             class="btn btn-social-icon btn-whatsapp p-1"
           >
             <span class="fa-brands fa-whatsapp"></span>
@@ -214,5 +213,6 @@
       </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -8,6 +8,10 @@
   user-select: none;
 }
 
+.align-right{
+  text-align: right;
+}
+
 body::-webkit-scrollbar {
   width: 0.1px;
 }
@@ -47,10 +51,11 @@ body::-webkit-scrollbar-thumb {
   padding: 15px;
   /* background-color: white; */
 }
-/* 
-nav * {
-  color: white !important;
-} */
+
+nav.navbar {
+  position: sticky;
+  z-index: 1;
+}
 
 .navbar-brand {
   font-weight: 600;
@@ -103,9 +108,19 @@ header {
   color: #535352 !important;
 }
 
-.title {
+header {
+  height: 50vh;
+}
+
+header.home {
+  height: 70vh;
+}
+
+.title,
+.contact-title {
   text-transform: uppercase;
   font-size: xx-large;
+  text-align: center;
 }
 
 .title:after {
@@ -131,7 +146,8 @@ header {
 
 /* features */
 
-#features, #about {
+.profile,
+#about {
   background-color: #535352;
   background-image: url("../assets/images/535352.jpg");
   height: 100%;
@@ -139,6 +155,11 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#features .card {
+  background-color: rgb(245, 245, 245);
+  border: none;
 }
 
 #features h2,
@@ -214,12 +235,12 @@ header {
   text-align: center;
 }
 
-#about p{
+#about p {
   font-weight: 100;
   font-size: large;
 }
 
-#about .detail{
+#about .detail {
   background-color: white;
   border-radius: 5px;
 }
@@ -228,45 +249,69 @@ header {
   border-right: 1px solid lightgray;
 }
 
-#about h3{
+#about h3 {
   margin: auto;
   font-size: large;
   font-weight: 400;
 }
 
 @media only screen and (max-width: 500px) {
-  .border-right{
+  .border-right {
     border-right: none;
   }
 
-  #about h3{
+  #about h3 {
     margin-top: 0.5rem;
   }
 }
 
+/* Contact */
+
+.contact a {
+  text-decoration: none;
+}
+
+.map {
+  border: 2px solid grey;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+/* Products */
+
+.products {
+  background-image: none;
+  background-color: white;
+}
+
+.products h3{
+  text-transform: capitalize;
+}
+
 /* Footer */
 
-footer *{
+footer * {
   color: #535352;
 }
 
-footer .social-media{
+footer .social-media {
   text-align: center;
 }
 
-footer .social-media *:before{
+footer .social-media *:before {
   font-size: xx-large;
 }
 
-footer h5{
+footer h5 {
   font-size: large;
   text-align: center;
 }
 
-footer p{
+footer p {
   text-align: center;
 }
 
-.copyright{
+.copyright {
   font-size: small;
 }
