@@ -286,7 +286,7 @@ header.home {
 }
 
 .products h3{
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* Footer */
@@ -314,4 +314,21 @@ footer p {
 
 .copyright {
   font-size: small;
+}
+
+.modal.fade.show{
+  display: flex!important;
+}
+
+.modal-dialog{
+  width: fit-content;
+  max-width: fit-content;
+}
+
+li{
+  text-transform: capitalize;
+}
+
+.goog-te-gadget-simple{
+  padding: 2px 8px!important;
 }
