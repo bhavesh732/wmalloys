@@ -5,7 +5,7 @@ function googleTranslateElementInit() {
       includedLanguages: "en,fr,zh-TW,zh-CN",
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
     },
-    "french"
+    "google_translate_element"
   );
 }
 
