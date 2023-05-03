@@ -2,9 +2,10 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     {
       pageLanguage: "en",
+      includedLanguages: "en,fr,zh-TW,zh-CN",
       layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
     },
-    "google_translate_element"
+    "french"
   );
 }
 
