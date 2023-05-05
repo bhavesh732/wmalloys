@@ -21,7 +21,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2c3494
+  background-color: #2c3494;
   border-radius: 20px;
   border: 0px solid orange;
 }
@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav.navbar {
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 1;
 }
@@ -112,14 +112,14 @@ header {
 }
 
 header {
-  height: 100vh;
-  background-color: #2c3494
+  height: fit-content;
+  background-color: #2c3494;
 }
-
+/* 
 header.home {
-  height: 100vh;
+  height: fit-content;
   background-image: url("../assets/images/home-header.jpg");
-}
+} */
 
 .home .container-fluid {
   height: 100%;
@@ -165,7 +165,7 @@ header.home {
 }
 
 .background-blue {
-  background-color: #2c3494
+  background-color: #2c3494;
 }
 
 .height-fit {
@@ -176,13 +176,17 @@ header.home {
 
 .profile,
 #about {
-  background-color: #535352;
-  background-image: url("../assets/images/535352.jpg");
+  background-color: black;
+  background-image: url("../assets/images/home-header.jpg");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#features{
+  background-color: #2c3494;
 }
 
 #features .card {
@@ -320,7 +324,7 @@ header.home {
 /* Footer */
 
 footer * {
-  color: #535352;
+  color: black;
 }
 
 footer .social-media {
