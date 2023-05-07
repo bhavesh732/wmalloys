@@ -185,7 +185,7 @@ header.home {
   background-size: cover;
 }
 
-#features{
+#features {
   background-color: #2c3494;
 }
 
@@ -232,8 +232,17 @@ header.home {
 
 /* Profile */
 
-.profile .container .row {
-  background-color: rgb(245, 245, 245);
+.profile .container .row .col-md-6 .col-12 {
+  background-color: #fff;
+  height: 100%;
+  box-shadow: 8px 8px 5px 1px #212c48;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.profile .col-lg-6 {
+  /* box-shadow: 8px 8px 5px 1px rgb(100, 100, 100); */
+  background-color: #fff;
 }
 
 .profile .img-fluid {
@@ -314,7 +323,7 @@ header.home {
 
 .products {
   background-image: none;
-  background-color: white;
+  background-color: #2c3494;
 }
 
 .products h3 {
