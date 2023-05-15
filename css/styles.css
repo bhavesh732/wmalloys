@@ -8,6 +8,10 @@
   user-select: none;
 }
 
+body {
+  background-color: #2c3494;
+}
+
 .align-right {
   text-align: right;
 }
@@ -43,6 +47,10 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   height: fit-content;
   border: 2px solid #ef4138;
+}
+
+.font-large{
+  font-size: large;
 }
 
 /* Navbar  */
@@ -157,6 +165,12 @@ header.home {
   }
   .lead {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .lead {
+    text-align: justify;
   }
 }
 
@@ -296,6 +310,10 @@ header.home {
   font-weight: 400;
 }
 
+.subsidiaries * {
+  color: white;
+}
+
 @media only screen and (max-width: 500px) {
   .border-right {
     border-right: none;
@@ -312,10 +330,16 @@ header.home {
   text-decoration: none;
 }
 
+.contact *:not(a) {
+  color: white;
+}
+
+.contact a{
+  color: lightgray;
+}
+
 .map {
-  border: 2px solid grey;
-  width: fit-content;
-  height: fit-content;
+  border: 2px solid white;
   display: flex;
 }
 
@@ -331,6 +355,10 @@ header.home {
 }
 
 /* Footer */
+
+footer {
+  background-color: white;
+}
 
 footer * {
   color: black;
@@ -364,6 +392,7 @@ footer p {
 .modal-dialog {
   width: fit-content;
   max-width: fit-content;
+  margin: auto;
 }
 
 li {
