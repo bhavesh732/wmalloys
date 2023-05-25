@@ -190,8 +190,8 @@ header.home {
 
 .profile,
 #about {
-  background-color: black;
-  background-image: url("../assets/images/home-header.jpg");
+  background-color: #2c3494;
+  /* background-image: url("../assets/images/home-header.jpg"); */
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -350,6 +350,20 @@ header.home {
   border-bottom-right-radius: 10px;
 }
 
+.border-right-radius-10{
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.border-left-radius-10{
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card-box {
+  box-shadow: 8px 8px 5px 1px #212c48;
+}
+
 .contact .contact-form input,
 .contact .contact-form textarea {
   color: black;
@@ -357,8 +371,8 @@ header.home {
   border-bottom: 2px solid #2c3494;
 }
 
-.contact .contact-form input:focus:not(input[type=submit]:focus),
-.contact .contact-form textarea:focus:not(input[type=submit]:focus) {
+.contact .contact-form input:focus:not(input[type="submit"]:focus),
+.contact .contact-form textarea:focus:not(input[type="submit"]:focus) {
   border-bottom: 3px solid #2c3494;
 }
 
@@ -367,7 +381,7 @@ header.home {
   color: black;
 }
 
-textarea{
+textarea {
   height: 30vh;
 }
 
