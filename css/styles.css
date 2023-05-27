@@ -8,6 +8,18 @@
   user-select: none;
 }
 
+@font-face {
+  src: url(../assets/font/rockeb.ttf);
+  font-family: "Rockwell";
+  font-display: swap;
+}
+
+.rockwell-font {
+  font-family: "Rockwell";
+  letter-spacing: 1px;
+  /* font-weight: 800!important; */
+}
+
 body {
   background-color: #2c3494;
 }
@@ -350,12 +362,12 @@ header.home {
   border-bottom-right-radius: 10px;
 }
 
-.border-right-radius-10{
+.border-right-radius-10 {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.border-left-radius-10{
+.border-left-radius-10 {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -455,4 +467,22 @@ li {
 
 :focus-visible {
   outline: none;
+}
+
+.regions li {
+  text-align: center;
+  font-size: large;
+  padding: 15px 0px;
+  /* border: 1px solid white;*/
+  border-radius: 10px;
+  margin: 10px 0px;
+  box-shadow: 8px 8px 5px 1px #212c48;
+}
+
+.goog-te-gadget-icon{
+  display: none;
+}
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed{
+  display: flex;
 }
