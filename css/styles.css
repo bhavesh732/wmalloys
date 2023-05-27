@@ -486,3 +486,7 @@ li {
 .VIpgJd-ZVi9od-xl07Ob-lTBxed{
   display: flex;
 }
+
+.btn:hover{
+  color: initial;
+}
